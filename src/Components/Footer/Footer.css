@@ -1,0 +1,13 @@
+footer{
+    width: 100%;
+    padding: 20px;
+    background-color: whitesmoke;
+    text-align: center;
+    font-family: sans-serif;
+    color: black;
+    font-size: 14px;
+}
+footer hr{
+    border: 0.1px solid inherit;
+    margin: 4px;
+}
