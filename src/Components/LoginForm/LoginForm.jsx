@@ -30,10 +30,14 @@ const LoginForm = ({ setShowForm, setShowMaintanance }) => {
         event.preventDefault();
         let currentUrl
 
-        if (setFormErrors(formValidation(formData))) {
+        if(formValidation(formData)){
+            setFormErrors(formValidation(formData))
+        }
+
+
             setShowMaintanance(true)
             setShowForm(false)
-        }
+
         // console.log(formErrors)
 
         //for now before backend developed
@@ -75,7 +79,7 @@ const LoginForm = ({ setShowForm, setShowMaintanance }) => {
                         formCondition === "Register" ?
                             <div className="form-content">
                                 <label htmlFor="phone">Phone Number</label>
-                                <input type="tel" name="phone" onChange={handleInputs} placeholder='Enter Your Phone Number' />
+                                <input type="tel" name="phone" onChange={handleInputs} placeholder='Enter Your Phone Number [0780....]' />
                                 {formErrors.phone ? <span>{formErrors.phone}</span> : ''}
                             </div> : ""
                     }

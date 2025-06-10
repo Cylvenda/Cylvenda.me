@@ -14,8 +14,12 @@ const formValidation = (values) => {
 
     if (values.phone === '') {
         msg.phone = 'Phonenumber is Required..'
-    } else if (Number(values.phone)) {
+    } else if (isNaN(values.phone)) {
         msg.phone = 'You can not put characters as a phonenumber'
+    } else if (values.phone.length < 10) {
+        msg.phone = 'Your phone number is not correct, it is too short'
+    } else if (values.phone.length > 10) {
+        msg.phone = 'Your phone number is not correct, it is too long'
     }
 
     if (values.password === '') {

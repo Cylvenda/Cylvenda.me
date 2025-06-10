@@ -1,19 +1,22 @@
-.container-head{
+.container-head {
     margin: 2rem auto;
     width: 90%;
     background-color: white;
     padding: 20px;
     border-radius: 10px;
 }
-.container-head h3{
+
+.container-head h3 {
     text-align: center;
     margin: 10px;
     font-size: 60px;
 }
-.container-head p{
+
+.container-head p {
     text-align: justify;
 }
-.button-container button{
+
+.button-container button {
     background-color: blue;
     width: 10rem;
     height: 35px;
@@ -26,33 +29,46 @@
     transition: 1s all ease;
     font-weight: 600;
 }
-.button-container button:hover{
+
+.button-container button:hover {
     background-color: rgb(52, 52, 247);
 }
-.container-head .button-container{
+
+.container-head .button-container {
     display: flex;
     justify-content: center;
 }
-.container-head .head-content p{
+
+.container-head .head-content p {
     font-size: 18px;
 }
 
 @media only screen and (max-width: 600px) {
-    .container-head{
+    .container-head {
         width: 97%;
     }
-    .container-head h3{
+
+    .container-head h3 {
         font-size: 40px;
     }
 }
 
 @media only screen and (max-width: 420px) {
-    .container-head h3{
-        font-size: 30px;
+    .container-head h3 {
+        font-size: 25px;
+    }
+
+    .container-head p {
+        font-size: 14px;
     }
 }
-@media only screen and (max-width: 325px) {
-    .container-head h3{
-        font-size: 20px;
+
+@media only screen and (max-width: 340px) {
+    .container-head h3 {
+        font-size: 22px;
+    }
+
+    .container-head p {
+        font-size: 13px;
     }
 }
