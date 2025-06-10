@@ -9,10 +9,12 @@ import Footer from '../../Components/Footer/Footer'
 import Doing from '../../Components/Doing/Doing'
 import Contact from '../../Components/Contact/Contact'
 import LoginForm from '../../Components/LoginForm/LoginForm'
+import Box from '../../Components/Maintanance/box'
 
 const Home = () => {
 
   const [showform, setShowForm] = useState(false)
+  const [showMaintanance, setShowMaintanance] = useState(false)
 
     useEffect(() =>{
       Aos.init();
@@ -20,13 +22,14 @@ const Home = () => {
 
   return (
     <>
-     {showform ? <LoginForm setShowForm={setShowForm} /> : <></>}
+     {showform ? <LoginForm setShowForm={setShowForm} setShowMaintanance={setShowMaintanance} /> : <></>}
+     {showMaintanance ? < Box setShowMaintanance={setShowMaintanance} /> : <></>}
       <Header setShowForm = {setShowForm} />
       <Head />
       <Boxes />
       <About />
       <Doing />
-      <Contact />
+      <Contact setShowMaintanance={setShowMaintanance} />
       <Footer />
     </>
   )

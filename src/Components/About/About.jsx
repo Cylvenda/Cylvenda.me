@@ -4,21 +4,31 @@ import './About..css'
 const About = () => {
   return (
 
-    <section  id='about' data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500" className="about-us">
+    <section id='about' data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500" className="about-us">
       <div className="container-about">
         <h2>About Cylvenda Technologies</h2>
         <p data-aos="zoom-in-down" data-aos-duration="1500" >
-          We provide safe, reliable transportation of your property during moves,
-          ensuring no damage or theft. Our mission is to make your relocation seamless.
+          At Cylvenda Technologies, we are a team of skilled IT specialists passionate about crafting high-performance
+          digital solutions. Our expertise lies in frontend and backend development, leveraging cutting-edge technologies
+          like React, HTML5, JavaScript, and CSS to build fast, responsive, and visually appealing websites and web
+          applications. Whether you need a dynamic single-page application, a robust e-commerce platform, or a
+          scalable business solution, we deliver clean, efficient, and maintainable code tailored to your needs.
+          Beyond frontend development, we specialize in full-stack solutions, ensuring seamless integration between user interfaces
+          and powerful backend systems. From database design to API development, we handle every aspect of the software lifecycle
+          to create cohesive and secure applications. Our approach combines innovation with reliability, ensuring that every
+          project meets industry standards while exceeding client expectations.
 
-          At Home Coming Company Limited, we take the stress out of moving by providing safe, reliable,
-          and efficient transportation services for your belongings. Whether you're relocating to a new home
-          or office, our experienced team ensures that your property is handled with the utmost care,
-          from packing to delivery, without damage or theft. We pride ourselves on transparent pricing,
-          professional service, and a commitment to customer satisfaction, making your move as seamless
-          as possible. With licensed and insured movers, premium packing materials, and a damage-free
-          guarantee, you can trust us to deliver your possessions securely and on time. Let us handle
-          the heavy lifting—so you can focus on settling into your new space with peace of mind.
+          In addition to development, we provide comprehensive IT support and maintenance, keeping systems optimized,
+          secure,
+          and up to date. Whether it’s troubleshooting, performance tuning, or deploying updates, we ensure your digital
+          infrastructure runs smoothly.
+
+          At Cylvenda Technologies, we don’t just build software, We create solutions that drive growth, efficiency, and
+          exceptional
+          user experiences. Let’s collaborate to bring your vision to life.
+
+          Ready to start your project? Contact us today! 
+
         </p>
       </div>
     </section>

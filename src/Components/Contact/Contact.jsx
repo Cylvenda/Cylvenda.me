@@ -2,7 +2,7 @@ import React from 'react'
 import './Contact.css'
 import { assets } from '../../assets/assets'
 
-const Contact = () => {
+const Contact = ({setShowMaintanance}) => {
     return (
         <section data-aos="fade-up" data-aos-duration="1500" className="contact-container">
             <div data-aos="zoom-in-left" data-aos-duration="3000" className="contact">
@@ -17,7 +17,7 @@ const Contact = () => {
                 <span className="contact-find">
                     <h3>Quick Service</h3>
                     <ul>
-                        <li>Email: <a href="mailto:brayanmlawa0917@gmail.com">brayanmlawa0917@gmail.com</a></li>
+                        <li>Email: <a href="mailto:cylvenda@gmail.com">cylvenda@gmail.com</a></li>
                         <li>Phone: <a href="tel:+255780598902">+255 780 598 902</a></li>
                         <li>Location: Dae-Es-Salaam, Tanzania</li>
                     </ul>
@@ -35,7 +35,7 @@ const Contact = () => {
                     </div>
 
                     <div className="button-container">
-                        <button>Submit</button>
+                        <button type='button' onClick={() => setShowMaintanance(true)}>Submit</button>
                     </div>
                 </form>
             </div>

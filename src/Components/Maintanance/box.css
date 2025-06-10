@@ -1,0 +1,45 @@
+.box-body {
+    background-color: red;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.box-content {
+    padding: 10px;
+    color: white;
+}
+
+.box-content h3 {
+    padding: 10px;
+    text-align: center;
+}
+
+.box-content p {
+    text-align: justify;
+    padding: 5px;
+}
+
+.box-content ul li{
+    list-style-type: none;
+}
+.support-info a{
+    text-decoration: none;
+    color: white;
+    padding: 3px;
+    transition: 1.5s;
+}
+.support-info a:hover{
+    color: blue;
+}
+
+.box-body button {
+    width: 100%;
+    margin-top: 5px;
+}
+
+@media only screen and (max-width: 380px) {
+    .box-body {
+        padding: 0px;
+        width: 97%;
+    }
+}

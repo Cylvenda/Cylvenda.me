@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
 import './Login.css'
 import { assets } from '../../assets/assets';
+import formValidation from './validations';
 import axios from 'axios';
 
-const LoginForm = ({ setShowForm }) => {
+const LoginForm = ({ setShowForm, setShowMaintanance }) => {
 
     const url = 'http://localhost:5000/cylvenda'
     const [formCondition, setFormCondition] = useState("Register");
@@ -25,43 +26,26 @@ const LoginForm = ({ setShowForm }) => {
         // console.log(formData)
     }
 
-    const formValidation = (values) => {
-
-        let msg = {}
-
-        if (values.name === '') {
-            msg.name = 'Username is Required..'
-        }
-
-        if (values.email === '') {
-            msg.email = 'Email field is Required..'
-        }
-
-        if (values.phone === '') {
-            msg.phone = 'Phonenumber is Required..'
-        }
-
-        if (values.password === '') {
-            msg.password = 'Password is Required..'
-        }else if(values.password.length < 6){
-            msg.password = 'Your password is too short '
-        }
-        return msg;
-    }
-
     const formHandler = async (event) => {
         event.preventDefault();
+        let currentUrl
 
-        setFormErrors(formValidation(formData))
+        if (setFormErrors(formValidation(formData))) {
+            setShowMaintanance(true)
+            setShowForm(false)
+        }
         // console.log(formErrors)
 
-        if (formCondition === 'Register') {
-            url += 'user/register'
-        } else if (formCondition === 'Login') {
-            url += 'user/login'
-        }
+        //for now before backend developed
 
-         const response = await axios.post(url, formData);
+
+        // if (formCondition === 'Register') {
+        //     currentUrl += 'user/register'
+        // } else if (formCondition === 'Login') {
+        //     currentUrl += 'user/login'
+        // }
+
+        // const response = await axios.post(currentUrl, formData);
 
     }
 
